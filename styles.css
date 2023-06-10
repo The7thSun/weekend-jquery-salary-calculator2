@@ -1,0 +1,29 @@
+header{
+    background-color: lightcoral;
+    color: black;
+    padding: .5em;
+}
+h1{
+    background-color: lightcoral;
+    color: black;
+    padding: .5em;
+}
+/*table */
+table {
+    width: 100%;
+    text-align: left;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    height: 2.15em;
+  }
+  th, td {
+    padding: .5em;
+    min-width: 3.5em;
+  }
+  thead {
+    background-color: indianred;
+    color: gold;
+  }
+
