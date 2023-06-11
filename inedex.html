@@ -15,19 +15,19 @@
     </header>
 
     <main>
-        <section>
+        <section id="S1">
             <h1>Add employee</h1>
             <form>
                 <input placeholder="First" type="text" id="FirstName">
                 <input  placeholder="Last" type="text" id="LastName">
                 <input placeholder="ID" type="text"  id="IdInteger">
-                <input placeholder="Job title" type="text"  id="">
-                <input placeholder="Salary" type="text" id="">
+                <input placeholder="Job title" type="text"  id="JobTitleInput">
+                <input placeholder="Salary" type="text" id="SalaryInput">
                 <button class="submit-btn">Submit</button>
             </form>
         </section>
 
-        <section>
+        <section id="S2">
             <h2>Employees</h2>
             <table>
                 <thead>
@@ -37,12 +37,20 @@
                         <th>ID</th>
                         <th>Title</th>
                         <th>Annual Salary</th>
+                        <td >Delete</td>
                     </tr>
                 </thead>
                 <tbody id="table-input"></tbody>
             </table>
-
         </section>
+
+        <section id="S3">
+            <h3>Total Monthly Costs</h3>
+             <div id="Monthly">
+                 <span id="Monthly-Costs-Display"></span>
+             </div>
+        </section>
+
     </main>
     
 </body>

@@ -1,10 +1,10 @@
 header{
-    background-color: lightcoral;
+    background-color: mediumpurple;
     color: black;
-    padding: .5em;
+    padding: .10em;
 }
 h1{
-    background-color: lightcoral;
+    background-color: mediumpurple;
     color: black;
     padding: .5em;
 }
@@ -23,7 +23,9 @@ table, th, td {
     min-width: 3.5em;
   }
   thead {
-    background-color: indianred;
+    background-color: rgb(227, 96, 227);
     color: gold;
   }
 
+
+  
