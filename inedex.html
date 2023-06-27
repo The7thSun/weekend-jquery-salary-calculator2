@@ -17,12 +17,12 @@
     <main>
         <section id="S1">
             <h1>Add employee</h1>
-            <form>
+            <form id="employee-form">
                 <input placeholder="First" type="text" id="FirstName">
                 <input  placeholder="Last" type="text" id="LastName">
                 <input placeholder="ID" type="text"  id="IdInteger">
                 <input placeholder="Job title" type="text"  id="JobTitleInput">
-                <input placeholder="Salary" type="text" id="SalaryInput">
+                <input placeholder="Salary" type="number" id="SalaryInput">
                 <button class="submit-btn">Submit</button>
             </form>
         </section>
@@ -32,7 +32,7 @@
             <table>
                 <thead>
                     <tr>
-                        <th>First Name</th>
+                        <th>first name</th>
                         <th>Last Name</th>
                         <th>ID</th>
                         <th>Title</th>
@@ -40,7 +40,9 @@
                         <td >Delete</td>
                     </tr>
                 </thead>
-                <tbody id="table-input"></tbody>
+                <tbody id="table-input">
+                   -- delete bt
+                </tbody>
             </table>
         </section>
 

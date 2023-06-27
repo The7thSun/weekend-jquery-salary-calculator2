@@ -1,4 +1,4 @@
-$(document).ready(onReady);
+jQuery(document).ready(onReady);
 //global variables 
 let SalaryCount= 0
 let MonthlySalary= 0
@@ -6,7 +6,7 @@ let TotalMonthlySalary= 0
 //turning my 20k thresh hold for the red background into a currency
 //for some reason it kept turning red only when i hit 2k instead of 20k so i upped the number to 200k to compensate
 //wasnt sure how to fix this 
-let twentyThousand= 200000
+let twentyThousand= 20000
 let currencyFormat= new Intl.NumberFormat('en-US', {style: 'currency', currency: 'USD'})
 let currency= currencyFormat.format(twentyThousand)
 
@@ -36,10 +36,7 @@ function SubmitDataCollector(event){
     let IdIntegerValue= $('#IdInteger').val()
     let JobTitleInputVal= $('#JobTitleInput').val()
     //turning the salary input into a number with (+)
-    let SalaryInputVal= +$('#SalaryInput').val()
-
-    
-
+    let SalaryInputVal= parseFloat($('#SalaryInput').val())
     //pushing the information into the DOM table 
     $('#table-input').append(`
     <tr>
@@ -62,7 +59,7 @@ function SubmitDataCollector(event){
     TotalMonthlySalary += SalaryInputVal
     MonthlySalary = TotalMonthlySalary/12
     //conditional statment that will turn the totalmonthly cost background to red
-    if(TotalMonthlySalary > twentyThousand){
+    if(MonthlySalary >= twentyThousand){
         $('#Monthly-Costs-Display').css({
          'background-color': 'red' 
         })
